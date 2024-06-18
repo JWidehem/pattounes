@@ -1,0 +1,18 @@
+{
+    "reservations": [
+      {
+        "id": 1,
+        "ownerName": "John Doe",
+        "address": "123 Main St",
+        "email": "johndoe@example.com",
+        "phone": "123-456-7890",
+        "service": "Dog Walking - 45min",
+        "reservationDate": "2023-07-10",
+        "animalName": "Buddy",
+        "animalBreed": "Labrador",
+        "importantInfo": "No allergies, very friendly",
+        "additionalInfo": "Requires extra water"
+      }
+    ]
+  }
+  
