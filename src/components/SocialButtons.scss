@@ -1,0 +1,42 @@
+@import '../variables.scss';
+
+.socials-container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid $color-100;
+
+  svg {
+    fill: $color-text;
+    height: 20px;
+  }
+}
+
+.twitter:hover {
+  background: linear-gradient(45deg, #66757f, #00acee, #36daff, $color-hover);
+}
+
+.facebook:hover {
+  background: linear-gradient(45deg, #134ac0, #316ff6, #78a3ff);
+}
+
+.google-plus:hover {
+  background: linear-gradient(45deg, #872419, #db4a39, #ff7061);
+}
+
+.instagram:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888',GradientType=1);
+}

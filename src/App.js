@@ -9,20 +9,23 @@ import AdminDashboard from './pages/AdminDashboard';
 import Login from './pages/Login';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import './App.scss'; // Importation du fichier SCSS global
 
 const App = () => {
   return (
     <Router>
       <Header />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/booking" element={<Booking />} />
-        <Route path="/admin" element={<AdminDashboard />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
+      <div className="content">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/booking" element={<Booking />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </div>
       <Footer />
     </Router>
   );
