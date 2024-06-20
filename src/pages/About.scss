@@ -1,79 +1,79 @@
-@import '../variables.scss';
+@import '../variables.scss'; // Import variables from another SCSS file
 
 .about-container {
-  padding: 20px;
-  font-family: $font-family;
-  color: $color-text;
+  padding: 20px; // Add padding around the container
+  font-family: $font-family; // Use font family from variables
+  color: $color-text; // Use text color from variables
 
   .about-content {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 100px;
+    display: flex; // Use flexbox for layout
+    justify-content: space-between; // Distribute space between child elements
+    margin-bottom: 100px; // Add margin to the bottom
 
     .about-left, .about-right {
-      flex: 1;
-      margin: 0 10px;
+      flex: 1; // Allow these sections to grow and shrink equally
+      margin: 0 10px; // Add margin to the left and right
     }
 
     .about-left {
-      display: flex;
-      flex-direction: column;
+      display: flex; // Use flexbox for layout
+      flex-direction: column; // Align items in a column
 
       .about-header {
-        text-align: left;
-        margin-bottom: 20px;
+        text-align: left; // Align text to the left
+        margin-bottom: 20px; // Add margin to the bottom
 
         h1 {
-          font-size: 2.5rem;
+          font-size: 2.5rem; // Set font size for the header
         }
       }
 
       .about-presentation {
         p {
-          font-size: 1.2rem;
-          line-height: 1.5;
+          font-size: 1.2rem; // Set font size for the paragraph
+          line-height: 1.5; // Set line height for the paragraph
         }
       }
 
       .contact-button-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
+        display: flex; // Use flexbox for layout
+        justify-content: center; // Center items horizontally
+        align-items: center; // Center items vertically
+        margin-top: 50px; // Add margin to the top
       }
     }
 
     .about-right {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: flex; // Use flexbox for layout
+      justify-content: center; // Center items horizontally
+      align-items: center; // Center items vertically
 
       .about-photo {
         img {
-          width: 540px;
-          height: auto;
-          border-radius: 10px;
+          width: 540px; // Set width for the image
+          height: auto; // Maintain aspect ratio
+          border-radius: 10px; // Round the corners of the image
         }
       }
     }
   }
 
   .certifications {
-    text-align: center;
+    text-align: center; // Center text
 
     h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
+      font-size: 2rem; // Set font size for the header
+      margin-bottom: 10px; // Add margin to the bottom
     }
 
     .certification-item {
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 20px;
+      padding: 20px; // Add padding inside the item
+      border-radius: 10px; // Round the corners of the item
+      margin-top: 20px; // Add margin to the top
 
       p {
-        font-size: 1.2rem;
-        margin: 5px 0;
+        font-size: 1.2rem; // Set font size for the paragraph
+        margin: 5px 0; // Add margin to the top and bottom
       }
     }
   }

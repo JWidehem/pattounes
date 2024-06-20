@@ -1,5 +1,6 @@
 @import '../variables.scss';
 
+// Contact Button Styles
 .contact-button {
   padding: 10px 20px;
   border-radius: 5px;
@@ -16,6 +17,7 @@
   }
 }
 
+// Modal Overlay Styles
 .modal {
   display: flex;
   justify-content: center;
@@ -29,24 +31,29 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+// Modal Content Styles
 .modal-content {
   background-color: $color-background;
   padding: 20px;
   border-radius: 10px;
   width: 80%;
   max-width: 500px;
+  position: relative;
 }
 
+// Close Button Styles
 .close {
   color: $color-200;
-  float: right;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 
   &:hover,
   &:focus {
     color: $color-700;
     text-decoration: none;
-    cursor: pointer;
   }
 }

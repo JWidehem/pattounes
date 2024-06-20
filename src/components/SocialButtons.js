@@ -1,9 +1,15 @@
-import React from 'react';
-import './SocialButtons.scss'; // Assurez-vous de lier le fichier SCSS
+// SocialButtons.js
 
+// Import necessary libraries and styles
+import React from 'react';
+import './SocialButtons.scss'; // Ensure the SCSS file for styles is linked
+
+// Define the functional component SocialButtons
 const SocialButtons = () => {
   return (
+    // Container for social media buttons
     <div className="socials-container">
+      {/* Twitter button with SVG icon */}
       <a href="https://twitter.com" className="social twitter" target="_blank" rel="noopener noreferrer">
         <svg height="1em" viewBox="0 0 512 512">
           <path
@@ -12,6 +18,7 @@ const SocialButtons = () => {
         </svg>
       </a>
 
+      {/* Facebook button with SVG icon */}
       <a href="https://facebook.com" className="social facebook" target="_blank" rel="noopener noreferrer">
         <svg height="1em" viewBox="0 0 320 512">
           <path
@@ -20,6 +27,7 @@ const SocialButtons = () => {
         </svg>
       </a>
 
+      {/* Instagram button with SVG icon */}
       <a href="https://instagram.com" className="social instagram" target="_blank" rel="noopener noreferrer">
         <svg height="1em" viewBox="0 0 448 512">
           <path
@@ -31,4 +39,5 @@ const SocialButtons = () => {
   );
 };
 
+// Export the SocialButtons component for use in other parts of the application
 export default SocialButtons;

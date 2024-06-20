@@ -1,51 +1,51 @@
-@import '../variables.scss';
+@import '../variables.scss'; // Import variables from another SCSS file
 
 .header {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $color-background;
-  padding: 10px 0;
-  margin-bottom: 20px;
-  height: 100px;
+  justify-content: center; // Center the header content horizontally
+  align-items: center; // Center the header content vertically
+  background-color: $color-background; // Use background color from variables
+  padding: 10px 0; // Add padding to the top and bottom
+  margin-bottom: 20px; // Add margin to the bottom
+  height: 100px; // Set the height of the header
 
   .nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
-    max-width: 1440px;
+    justify-content: space-between; // Distribute space between child elements
+    align-items: center; // Align items vertically in the center
+    width: 60%; // Set the width of the navigation
+    max-width: 1440px; // Set the maximum width of the navigation
     position: relative;
 
     ul {
-      list-style: none;
-      display: flex;
-      gap: 50px;
-      padding: 0;
-      margin: 0;
+      list-style: none; // Remove default list styling
+      display: flex; // Display list items in a row
+      gap: 50px; // Add space between list items
+      padding: 0; // Remove default padding
+      margin: 0; // Remove default margin
 
       li {
         a {
-          color: $color-200;
-          text-decoration: none;
-          padding: 10px 20px;
-          border-radius: 25px;
-          background: linear-gradient(45deg, $color-800, $color-700);
-          border: 1px solid $color-200;
-          font-family: $font-family;
-          font-size: 20px;
-          font-weight: bold;
+          color: $color-200; // Use text color from variables
+          text-decoration: none; // Remove underline from links
+          padding: 10px 20px; // Add padding inside the link
+          border-radius: 25px; // Round the corners of the link
+          background: linear-gradient(45deg, $color-800, $color-700); // Set background gradient
+          border: 1px solid $color-200; // Set border color
+          font-family: $font-family; // Use font family from variables
+          font-size: 20px; // Set font size
+          font-weight: bold; // Set font weight
 
           &:hover {
-            background: linear-gradient(45deg, $color-200, $color-100);
-            border: 1px solid $color-700;
-            color: $color-700;
+            background: linear-gradient(45deg, $color-200, $color-100); // Change background gradient on hover
+            border: 1px solid $color-700; // Change border color on hover
+            color: $color-700; // Change text color on hover
           }
 
           &.active {
-            background: linear-gradient(45deg, $color-200, $color-100);
-            border: 1px solid $color-700;
-            color: $color-700;
+            background: linear-gradient(45deg, $color-200, $color-100); // Set background gradient for active link
+            border: 1px solid $color-700; // Set border color for active link
+            color: $color-700; // Set text color for active link
           }
         }
       }
@@ -53,17 +53,17 @@
 
     .logo-container {
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 50%; // Center the logo container horizontally
+      transform: translateX(-50%); // Adjust position to center the logo container
       display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 150px; // Largeur du logo
-      height: 100%; // Hauteur du conteneur pour centrer verticalement
+      justify-content: center; // Center the logo horizontally
+      align-items: center; // Center the logo vertically
+      width: 150px; // Set the width of the logo container
+      height: 100%; // Set the height of the logo container to match the header
 
       .logo {
-        height: 150px;
-        width: 150px;
+        height: 150px; // Set the height of the logo
+        width: 150px; // Set the width of the logo
       }
     }
   }

@@ -1,80 +1,80 @@
-@import '../variables.scss';
+@import '../variables.scss'; // Import variables from another SCSS file
 
 footer {
   width: 100%;
-  background-color: $color-background; // Utilisation de la couleur de fond
-  color: $color-text;
+  background-color: $color-background; // Use background color from variables
+  color: $color-text; // Use text color from variables
   text-align: center;
-  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); // Add a shadow to the footer
+  z-index: 1000; // Ensure the footer is on top of other elements
   position: relative;
   bottom: 0;
-  font-family: $font-family;
+  font-family: $font-family; // Use font family from variables
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  margin: 0 auto;
-  height: 150px;
+  justify-content: space-between; // Distribute space between child elements
+  align-items: center; // Align items vertically in the center
+  padding: 0 20px; // Add padding to the left and right
+  margin: 0 auto; // Center the content
+  height: 150px; // Set the height of the footer
   position: relative;
 }
 
 .footer-left,
 .footer-right {
-  flex: 1;
+  flex: 1; // Allow these sections to grow and shrink equally
 }
 
 .footer-left {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: flex-start; // Align items to the start of the container
+  align-items: center; // Align items vertically in the center
 }
 
 .footer-right {
   display: flex;
-  flex-direction: column; /* Ajout de cette ligne pour aligner les éléments en colonne */
-  justify-content: flex-end;
-  align-items: flex-end; /* Ajout de cette ligne pour aligner le texte à droite */
-  text-align: right; /* Ajustement pour que le texte soit aligné à droite */
+  flex-direction: column; // Align items in a column
+  justify-content: flex-end; // Align items to the end of the container
+  align-items: flex-end; // Align items to the end of the container
+  text-align: right; // Align text to the right
 }
 
 .footer-right h4 {
-  margin: 0 0 10px;
+  margin: 0 0 10px; // Add margin below the heading
 }
 
 .footer-right ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  list-style: none; // Remove default list styling
+  padding: 0; // Remove default padding
+  margin: 0; // Remove default margin
 }
 
 .footer-right ul li {
-  margin: 5px 0;
+  margin: 5px 0; // Add margin above and below each list item
 }
 
 .footer-right ul li a {
-  color: $color-text;
-  text-decoration: none;
+  color: $color-text; // Use text color from variables
+  text-decoration: none; // Remove underline from links
 
   &:hover {
-    color: $color-hover;
+    color: $color-hover; // Change color on hover
   }
 }
 
 .footer-right ul li a:hover {
-  text-decoration: underline;
+  text-decoration: underline; // Add underline on hover
 }
 
 .footer-map {
-  flex: 0 0 600px; /* Largeur fixe */
+  flex: 0 0 600px; // Fixed width
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  justify-content: center; // Center the map horizontally
+  align-items: center; // Center the map vertically
+  margin: 0 auto; // Center the map within its container
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 50%; // Position the map in the center
+  transform: translateX(-50%); // Adjust position to center the map
 }

@@ -1,6 +1,10 @@
 // variables.scss
-$color-background: #1A140F;
-$color-text: #D7D3B1;
+
+// Define color variables
+$color-background: #1A140F; // Background color
+$color-text: #D7D3B1; // Text color
+
+// Define a range of color shades
 $color-50: #F7F6EF;
 $color-100: #EAE8D7;
 $color-200: #D7D3B1;
@@ -12,8 +16,14 @@ $color-700: #6D5A3B;
 $color-800: #5D4C36;
 $color-900: #514232;
 $color-950: #1A140F;
-$color-primary: $color-500;
-$color-secondary: $color-300;
-$color-hover: $color-600;
-$color-glow: $color-700;
-$font-family: 'Montserrat', sans-serif;
+
+// Define primary and secondary colors
+$color-primary: $color-500; // Primary color
+$color-secondary: $color-300; // Secondary color
+
+// Define hover and glow colors
+$color-hover: $color-600; // Hover color
+$color-glow: $color-700; // Glow color
+
+// Define font family
+$font-family: 'Montserrat', sans-serif; // Font family

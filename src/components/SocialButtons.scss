@@ -1,38 +1,38 @@
-@import '../variables.scss';
+@import '../variables.scss'; // Import variables from another SCSS file
 
 .socials-container {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
+  width: fit-content; // Adjust width to fit the content
+  height: fit-content; // Adjust height to fit the content
+  display: flex; // Use flexbox for layout
+  align-items: center; // Center items vertically
+  justify-content: center; // Center items horizontally
+  gap: 25px; // Add space between social buttons
 }
 
 .social {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid $color-100;
+  width: 50px; // Set fixed width for social buttons
+  height: 50px; // Set fixed height for social buttons
+  display: flex; // Use flexbox for layout
+  align-items: center; // Center items vertically
+  justify-content: center; // Center items horizontally
+  border-radius: 50%; // Make buttons circular
+  border: 1px solid $color-100; // Set border color from variables
 
   svg {
-    fill: $color-text;
-    height: 20px;
+    fill: $color-text; // Set SVG fill color from variables
+    height: 20px; // Set SVG height
   }
 }
 
 .twitter:hover {
-  background: linear-gradient(45deg, #66757f, #00acee, #36daff, $color-hover);
+  background: linear-gradient(45deg, #66757f, #00acee, #36daff, $color-hover); // Set background gradient on hover
 }
 
 .facebook:hover {
-  background: linear-gradient(45deg, #134ac0, #316ff6, #78a3ff);
+  background: linear-gradient(45deg, #134ac0, #316ff6, #78a3ff); // Set background gradient on hover
 }
 
 .instagram:hover {
-  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888',GradientType=1);
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); // Set background gradient on hover
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1); // Fallback for older versions of IE
 }
