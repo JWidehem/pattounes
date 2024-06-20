@@ -1,0 +1,52 @@
+@import '../variables.scss';
+
+.contact-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: $color-200;
+  color: $color-background;
+  font-family: $font-family;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid $color-700;
+
+  &:hover {
+    background-color: $color-100;
+    color: $color-700;
+  }
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: $color-background;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close {
+  color: $color-200;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  &:hover,
+  &:focus {
+    color: $color-700;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

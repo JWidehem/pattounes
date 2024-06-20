@@ -1,0 +1,80 @@
+@import '../variables.scss';
+
+.about-container {
+  padding: 20px;
+  font-family: $font-family;
+  color: $color-text;
+
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    .about-left, .about-right {
+      flex: 1;
+      margin: 0 10px;
+    }
+
+    .about-left {
+      display: flex;
+      flex-direction: column;
+
+      .about-header {
+        text-align: left;
+        margin-bottom: 20px;
+
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
+
+      .about-presentation {
+        p {
+          font-size: 1.2rem;
+          line-height: 1.5;
+        }
+      }
+
+      .contact-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+    }
+
+    .about-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .about-photo {
+        img {
+          width: 540px;
+          height: auto;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  .certifications {
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .certification-item {
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+
+      p {
+        font-size: 1.2rem;
+        margin: 5px 0;
+      }
+    }
+  }
+}

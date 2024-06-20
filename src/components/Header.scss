@@ -13,13 +13,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 800px;
+    width: 60%;
+    max-width: 1440px;
+    position: relative;
 
     ul {
       list-style: none;
       display: flex;
-      gap: 30px;
+      gap: 50px;
       padding: 0;
       margin: 0;
 
@@ -54,6 +55,11 @@
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px; // Largeur du logo
+      height: 100%; // Hauteur du conteneur pour centrer verticalement
 
       .logo {
         height: 150px;

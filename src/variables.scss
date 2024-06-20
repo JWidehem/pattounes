@@ -1,8 +1,6 @@
-// Variables de couleur
-$color-background: #1A140F; // Fond anthracite foncé
-$color-text: #D7D3B1; // Texte utilisant la couleur 200
-
-// Palette de couleurs
+// variables.scss
+$color-background: #1A140F;
+$color-text: #D7D3B1;
 $color-50: #F7F6EF;
 $color-100: #EAE8D7;
 $color-200: #D7D3B1;
@@ -14,12 +12,8 @@ $color-700: #6D5A3B;
 $color-800: #5D4C36;
 $color-900: #514232;
 $color-950: #1A140F;
-
-// Exemple d'utilisation
 $color-primary: $color-500;
 $color-secondary: $color-300;
 $color-hover: $color-600;
 $color-glow: $color-700;
-
-// Font
 $font-family: 'Montserrat', sans-serif;
