@@ -2,7 +2,6 @@
 
 footer {
   width: 100%;
-  height: 150px;
   background-color: $color-background; // Utilisation de la couleur de fond
   color: $color-text;
   text-align: center;
@@ -20,15 +19,26 @@ footer {
   padding: 0 20px;
   margin: 0 auto;
   height: 150px;
+  position: relative;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
 }
 
 .footer-left {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .footer-right {
-  text-align: left;
+  display: flex;
+  flex-direction: column; /* Ajout de cette ligne pour aligner les éléments en colonne */
+  justify-content: flex-end;
+  align-items: flex-end; /* Ajout de cette ligne pour aligner le texte à droite */
+  text-align: right; /* Ajustement pour que le texte soit aligné à droite */
 }
 
 .footer-right h4 {
@@ -58,13 +68,13 @@ footer {
   text-decoration: underline;
 }
 
-.social-buttons {
-  margin-top: 0;
-}
-
 .footer-map {
+  flex: 0 0 600px; /* Largeur fixe */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }

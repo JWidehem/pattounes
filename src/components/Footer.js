@@ -1,3 +1,4 @@
+// Footer.js
 import React from 'react';
 import SocialButtons from './SocialButtons';
 import Map from './Map'; // Importez le composant Map
