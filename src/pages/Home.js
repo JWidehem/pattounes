@@ -1,10 +1,10 @@
 import React from 'react';
+import Carrousel from '../components/Carrousel'; // Mise à jour du chemin d'importation
 
 const Home = () => {
   return (
     <div>
-      <h1>Welcome to Lisa's Pet Sitting Services</h1>
-      <p>Your pets are in good hands with Lisa.</p>
+      <Carrousel />
     </div>
   );
 };
