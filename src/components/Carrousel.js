@@ -309,7 +309,7 @@ const Carrousel = () => {
     return (
         <div className="slider" ref={sliderRef}>
             <button className="slider--btn slider--btn__prev">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="m15 18-6-6 6-6" />
                 </svg>
             </button>
@@ -323,7 +323,7 @@ const Carrousel = () => {
                         </div>
                     </div>
                     <div className="slide__bg" data-current></div>
-
+    
                     <div className="slide" data-next>
                         <div className="slide__inner">
                             <div className="slide--image__wrapper">
@@ -332,7 +332,7 @@ const Carrousel = () => {
                         </div>
                     </div>
                     <div className="slide__bg" data-next></div>
-
+    
                     <div className="slide" data-previous>
                         <div className="slide__inner">
                             <div className="slide--image__wrapper">
@@ -342,7 +342,7 @@ const Carrousel = () => {
                     </div>
                     <div className="slide__bg" data-previous></div>
                 </div>
-
+    
                 <div className="slides--infos">
                     <div className="slide-info" data-current>
                         <div className="slide-info__inner">
@@ -359,7 +359,7 @@ const Carrousel = () => {
                             </div>
                         </div>
                     </div>
-
+    
                     <div className="slide-info" data-next>
                         <div className="slide-info__inner">
                             <div className="slide-info--text__wrapper">
@@ -375,7 +375,7 @@ const Carrousel = () => {
                             </div>
                         </div>
                     </div>
-
+    
                     <div className="slide-info" data-previous>
                         <div className="slide-info__inner">
                             <div className="slide-info--text__wrapper">
@@ -393,18 +393,18 @@ const Carrousel = () => {
                     </div>
                 </div>
             </div>
-
+    
             <button className="slider--btn slider--btn__next">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="m9 18 6-6-6-6" />
                 </svg>
             </button>
-
+    
             <div className="loader">
                 <span className="loader__text">0%</span>
             </div>
         </div>
     );
-};
+}
 
 export default Carrousel;
