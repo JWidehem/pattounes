@@ -336,7 +336,7 @@ const Carrousel = () => {
                     <div className="slide" data-previous>
                         <div className="slide__inner">
                             <div className="slide--image__wrapper">
-                                <img className="slide--image" src="https://devloop01.github.io/voyage-slider/images/chamonix.jpg" alt="Chamonix" />
+                                <img className="slide--image" src="https://devloop01.github.io/voyage-slider/images/chamonix.jpg" alt="Chammonix" />
                             </div>
                         </div>
                     </div>
