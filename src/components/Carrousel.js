@@ -318,7 +318,7 @@ const Carrousel = () => {
                     <div className="slide" data-current>
                         <div className="slide__inner">
                             <div className="slide--image__wrapper">
-                                <img className="slide--image" src="https://devloop01.github.io/voyage-slider/images/scotland-mountains.jpg" alt="Scotland Mountains" />
+                                <img className="slide--image" src="/img/Lisa1.webp" alt="Lisa" />
                             </div>
                         </div>
                     </div>
@@ -327,7 +327,7 @@ const Carrousel = () => {
                     <div className="slide" data-next>
                         <div className="slide__inner">
                             <div className="slide--image__wrapper">
-                                <img className="slide--image" src="https://devloop01.github.io/voyage-slider/images/machu-pichu.jpg" alt="Machu Pichu" />
+                                <img className="slide--image" src="/img/Lisa2.webp" alt="Lisa" />
                             </div>
                         </div>
                     </div>
@@ -336,7 +336,7 @@ const Carrousel = () => {
                     <div className="slide" data-previous>
                         <div className="slide__inner">
                             <div className="slide--image__wrapper">
-                                <img className="slide--image" src="https://devloop01.github.io/voyage-slider/images/chamonix.jpg" alt="Chammonix" />
+                                <img className="slide--image" src="/img/oldinuit.webp" alt="Goldorak" />
                             </div>
                         </div>
                     </div>
@@ -348,13 +348,13 @@ const Carrousel = () => {
                         <div className="slide-info__inner">
                             <div className="slide-info--text__wrapper">
                                 <div data-title className="slide-info--text">
-                                    <span>Highlands</span>
+                                    <span>Lisa</span>
                                 </div>
                                 <div data-subtitle className="slide-info--text">
-                                    <span>Scotland</span>
+                                    <span>& Floki</span>
                                 </div>
                                 <div data-description className="slide-info--text">
-                                    <span>The mountains are calling</span>
+                                    <span>Un amour inconditionnel</span>
                                 </div>
                             </div>
                         </div>
@@ -364,13 +364,13 @@ const Carrousel = () => {
                         <div className="slide-info__inner">
                             <div className="slide-info--text__wrapper">
                                 <div data-title className="slide-info--text">
-                                    <span>Machu Pichu</span>
+                                    <span>Lisa</span>
                                 </div>
                                 <div data-subtitle className="slide-info--text">
-                                    <span>Peru</span>
+                                    <span>& Floki</span>
                                 </div>
                                 <div data-description className="slide-info--text">
-                                    <span>Adventure is never far away</span>
+                                    <span>Un amour inconditionnel</span>
                                 </div>
                             </div>
                         </div>
@@ -380,13 +380,13 @@ const Carrousel = () => {
                         <div className="slide-info__inner">
                             <div className="slide-info--text__wrapper">
                                 <div data-title className="slide-info--text">
-                                    <span>Chamonix</span>
+                                    <span>Goldorak</span>
                                 </div>
                                 <div data-subtitle className="slide-info--text">
-                                    <span>France</span>
+                                    <span>Old Inuit Dog</span>
                                 </div>
                                 <div data-description className="slide-info--text">
-                                    <span>Let your dreams come true</span>
+                                    <span>Rapide et Furieux</span>
                                 </div>
                             </div>
                         </div>
