@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useMemo, useCallback } from 'react';
 import './Carrousel.scss';
-import imagesLoaded from 'imagesloaded';
 
 const Carrousel = () => {
     const sliderRef = useRef(null);
@@ -227,8 +226,6 @@ const Carrousel = () => {
         }
 
         const init = () => {
-            const loader = document.querySelector(".loader");
-
             const slides = [...document.querySelectorAll(".slide")];
             const slidesInfo = [...document.querySelectorAll(".slide-info")];
 
@@ -236,9 +233,6 @@ const Carrousel = () => {
                 prev: document.querySelector(".slider--btn__prev"),
                 next: document.querySelector(".slider--btn__next")
             };
-
-            loader.style.opacity = 0;
-            loader.style.pointerEvents = "none";
 
             slides.forEach((slide, i) => {
                 const slideInner = slide.querySelector(".slide__inner");
@@ -263,39 +257,7 @@ const Carrousel = () => {
             resetInactivityTimeout();
         }
 
-        const setup = () => {
-            const loaderText = document.querySelector(".loader__text");
-
-            const images = [...document.querySelectorAll("img")];
-            const totalImages = images.length;
-            let loadedImages = 0;
-            let progress = {
-                current: 0,
-                target: 0
-            };
-
-            images.forEach((image) => {
-                imagesLoaded(image, (instance) => {
-                    if (instance.isComplete) {
-                        loadedImages++;
-                        progress.target = loadedImages / totalImages;
-                    }
-                });
-            });
-
-            rafInstance.add(({ id }) => {
-                progress.current = lerp(progress.current, progress.target, 0.06);
-                const progressPercent = Math.round(progress.current * 100);
-                loaderText.textContent = `${progressPercent}%`;
-
-                if (progressPercent === 100) {
-                    init();
-                    rafInstance.remove(id);
-                }
-            });
-        }
-
-        setup();
+        init();
 
         return () => {
             clearTimeout(inactivityTimeoutRef.current);
@@ -399,10 +361,6 @@ const Carrousel = () => {
                     <path d="m9 18 6-6-6-6" />
                 </svg>
             </button>
-    
-            <div className="loader">
-                <span className="loader__text">0%</span>
-            </div>
         </div>
     );
 }
